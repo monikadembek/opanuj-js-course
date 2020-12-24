@@ -29,7 +29,7 @@ const encryptionData = {
 function greeting(message) {
   const modifiedLetterCasingMessage = changeLetterCasing(message);
   const encryptedMessage = [...modifiedLetterCasingMessage].map(letter => 
-    encryptionData[letter.toLowerCase()] !== undefined ? encryptionData[letter.toLowerCase()] : letter
+    typeof encryptionData[letter.toLowerCase()] !== 'undefined' ? encryptionData[letter.toLowerCase()] : letter
   ).join('');
   console.log(message, ' => ', encryptedMessage);
   return encryptedMessage;
