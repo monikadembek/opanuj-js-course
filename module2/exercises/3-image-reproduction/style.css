@@ -1,0 +1,24 @@
+h1, h2 {
+  font-family: Lato;
+}
+  
+.flex-row {
+  display: flex;
+  flex-direction: row;
+}
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.pixel {
+  background: #9fe2fd;
+  border: 1px solid white;
+  width: 15px;
+  height: 15px;
+}
+
+.pixel-dot {
+  background: #e44d4d;
+}

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zdarzenia</title>
+    <style>
+        input {
+            display: block;
+            margin-bottom: 20px;
+        }
+        .green {
+            color: green;
+        }
+        .box {
+            border: 1px solid black;
+            padding: 20px;
+            background: white;
+        }
+        .active {
+            background: yellow;
+        }
+    </style>
+</head>
+<body>
+    <p class="greeting green">Witaj w kursie opanuj JavaScript!</p>
+    <form>
+        <input type="text" placeholder="komentarz">
+        <button class="btn">Dodaj do ulubionych</button>
+        <button type="button" class="action">Wywołaj akcję</button>
+        <button type="button" class="mute">Wycisz</button>
+    </form>
+    <ul class="list">
+        <li class="list-item list-item--first">
+            <a href="#">Strona głowna</a>
+        </li>
+        <li class="list-item list-item--second">
+            <a href="#">O nas</a>
+        </li>
+        <li class="list-item list-item--third">
+            <a href="#">Więcej</a>
+        </li>
+    </ul>
+
+    <div class="box one">
+        1
+        <div class="box two">
+            2
+            <div class="box three">
+                3
+                <div class="box four">
+                    4
+                </div>
+            </div>
+        </div>
+    </div>
+    <button class="sendEventBtn">Wyslij zdarzenie</button>
+    <script defer src="9-zdarzenia.js"></script>
+</body>
+</html>

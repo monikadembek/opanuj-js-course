@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zdarzenia</title>
+    <style>
+        .hidden {
+            display: none;
+        }
+        label, select {
+            display: block;
+            margin-bottom: 10px;
+        }
+        .validation {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <label for="firstName">
+            Imię
+            <input type="text" placeholder="John" class="firstName">
+        </label>
+        <p class="firstName-validation validation hidden">To pole jest wymagane</p>
+        <label for="lastName">
+            Nazwisko
+            <input type="text" placeholder="Doe" class="lastName">
+        </label>
+        <p class="lastName-validation validation hidden">To pole jest wymagane</p>
+        <select class="color">
+            <option value="">Wybierz deser</option>
+            <option value="1">Ciastka</option>
+            <option value="2">Pączki</option>
+        </select>
+        <p class="color-validation validation hidden">To pole jest wymagane</p>
+        <button>Zapisz</button>
+    </form>
+    <script defer src="10-formularze.js"></script>
+</body>
+</html>
