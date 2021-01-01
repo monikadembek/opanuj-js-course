@@ -31,3 +31,5 @@ document.addEventListener('DOMContentLoaded', () => {
     forest.insertAdjacentElement('afterend', message);
   }
 });
+
+//TODO: check behavior of playing audio in Chrome - it plays only once, then shows warning
